@@ -1,0 +1,56 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=Black+Han+Sans&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.card{width:1080px;height:1350px;background:#0B0C0E;color:#F5F3EE;position:relative;overflow:hidden;padding:88px 90px;font-family:'IBM Plex Sans KR',sans-serif;display:flex;flex-direction:column}
+.road{position:absolute;inset:0;z-index:0}
+.card>*:not(.road){position:relative;z-index:1}
+.grain{position:absolute;inset:0;z-index:2!important;pointer-events:none;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:24px;letter-spacing:3px;color:#B9B4A8}
+.top b{color:#F5F3EE;font-weight:700}
+.pill{border:2px solid #FFC93C;color:#FFC93C;padding:8px 20px;border-radius:40px;letter-spacing:1px;font-weight:700}
+.q{font-size:52px;font-weight:700;line-height:1.35;margin-top:120px;letter-spacing:-1px}
+.q em{font-style:normal;color:#FFC93C}
+.huge{font-family:'Black Han Sans';font-size:330px;line-height:.95;color:#FFC93C;letter-spacing:-6px;margin-top:30px;text-shadow:0 20px 60px rgba(255,201,60,.25)}
+.huge s{text-decoration-thickness:18px;text-decoration-color:#F5F3EE}
+.ans{font-size:46px;font-weight:700;line-height:1.4;margin-top:24px}
+.bottom{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;font-size:22px;color:#8D887D}
+.swipe{color:#F5F3EE;font-size:30px;font-weight:700;letter-spacing:1px}
+.step{display:flex;gap:34px;align-items:flex-start;padding:40px 0;border-bottom:1px solid rgba(245,243,238,.18)}
+.step .n{font-family:'Black Han Sans';font-size:96px;color:#FFC93C;line-height:.9;width:150px;flex:none}
+.step h3{font-size:46px;font-weight:700;letter-spacing:-1px}
+.step p{font-size:32px;color:#B9B4A8;margin-top:10px;line-height:1.45}
+h2{font-family:'Black Han Sans';font-size:110px;font-weight:400;line-height:1.08;margin-top:70px;letter-spacing:-2px}
+h2 em{font-style:normal;color:#FFC93C}
+</style></head><body>
+
+<section class="card" id="b1">
+  <svg class="road" viewBox="0 0 1080 1350" preserveAspectRatio="none">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B0C0E"/><stop offset=".55" stop-color="#0B0C0E"/><stop offset="1" stop-color="#1B1D22"/></linearGradient>
+    <radialGradient id="v" cx=".5" cy=".95" r=".7"><stop offset="0" stop-color="#FFC93C" stop-opacity=".18"/><stop offset="1" stop-color="#FFC93C" stop-opacity="0"/></radialGradient></defs>
+    <rect width="1080" height="1350" fill="url(#g)"/><rect width="1080" height="1350" fill="url(#v)"/>
+    <path d="M540 760 L140 1350" stroke="#F5F3EE" stroke-opacity=".35" stroke-width="6"/>
+    <path d="M540 760 L940 1350" stroke="#F5F3EE" stroke-opacity=".35" stroke-width="6"/>
+    <path d="M540 760 L540 1350" stroke="#FFC93C" stroke-opacity=".55" stroke-width="10" stroke-dasharray="40 46"/>
+    <path d="M600 900 C700 980, 860 1010, 1080 1000" stroke="#FFC93C" stroke-opacity=".4" stroke-width="5" fill="none" stroke-dasharray="14 16"/>
+  </svg>
+  <div class="grain"></div>
+  <div class="top"><b>CARMONEY</b><span class="pill">10.1 시행</span></div>
+  <p class="q">출구를 놓쳐 <em>잘못 나갔다면</em><br>돌아오는 길에 냈던 이 돈,</p>
+  <div class="huge"><s>900원</s></div>
+  <p class="ans">이제 안 내도 됩니다.</p>
+  <div class="bottom"><span style="background:#0B0C0E;padding:4px 8px 4px 0">국토교통부 보도자료 2026.9.29</span><span class="swipe">조건 보기 →</span></div>
+</section>
+
+<section class="card" id="b2">
+  <div class="grain"></div>
+  <div class="top"><b>CARMONEY</b><span>3 / 7</span></div>
+  <h2>딱 <em>세 가지</em>만<br>맞으면 면제</h2>
+  <div style="margin-top:50px">
+    <div class="step"><div class="n">15′</div><div><h3>15분 안에</h3><p>잘못 나간 뒤 15분 이내 재진입</p></div></div>
+    <div class="step"><div class="n">↺</div><div><h3>같은 요금소로</h3><p>나갔던 그 요금소로 다시 들어오기</p></div></div>
+    <div class="step"><div class="n">Hi</div><div><h3>전자결제로</h3><p>하이패스 등 · 차량당 1년 3회까지</p></div></div>
+  </div>
+  <div class="bottom"><span>민자고속도로 요금소는 제외</span><span>국토교통부 2026.9.29</span></div>
+</section>
+</body></html>
